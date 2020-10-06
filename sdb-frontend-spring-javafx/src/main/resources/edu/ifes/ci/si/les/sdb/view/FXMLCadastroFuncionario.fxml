@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" fx:id="apFunc" prefHeight="364.0" prefWidth="606.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="edu.ifes.ci.si.les.sdb.controller.FXMLCadastroFuncionarioController">
+   <children>
+      <TextField fx:id="tfTel2" layoutX="392.0" layoutY="284.0" />
+      <TextField fx:id="tfTel1" layoutX="391.0" layoutY="257.0" />
+      <ComboBox fx:id="cbBairro" layoutX="369.0" layoutY="203.0" prefWidth="150.0" />
+      <TextField fx:id="tfNum" layoutX="352.0" layoutY="175.0" prefHeight="25.0" prefWidth="69.0" />
+      <TextField fx:id="tfRua" layoutX="359.0" layoutY="148.0" />
+      <TextField fx:id="tfEmail" layoutX="370.0" layoutY="120.0" />
+      <TextField fx:id="tfTipo" layoutX="370.0" layoutY="92.0" />
+      <TextField fx:id="tfCPF" layoutX="400.0" layoutY="65.0" />
+      <TextField fx:id="tfNome" layoutX="434.0" layoutY="38.0" />
+      <Label fx:id="lbTele1" layoutX="393.0" layoutY="283.0" />
+      <Label fx:id="lbTela1" layoutX="393.0" layoutY="258.0" />
+      <Label fx:id="lbBairro1" layoutX="374.0" layoutY="206.0" />
+      <Label fx:id="lbStatus1" layoutX="492.0" layoutY="181.0" />
+      <Label fx:id="lbNum1" layoutX="347.0" layoutY="181.0" />
+      <Label fx:id="lbRua1" layoutX="358.0" layoutY="156.0" />
+      <Label fx:id="lbEmail1" layoutX="372.0" layoutY="132.0" />
+      <Label fx:id="lbTipo1" layoutX="362.0" layoutY="102.0" />
+      <Label fx:id="lbCPF1" layoutX="393.0" layoutY="72.0" />
+      <Label fx:id="lbNomeFunc1" layoutX="436.0" layoutY="42.0" />
+      <Button fx:id="btnListar" layoutX="422.0" layoutY="332.0" mnemonicParsing="false" onAction="#handleButtonListar" text="Listar" />
+      <Button fx:id="btnRemover" layoutX="474.0" layoutY="332.0" mnemonicParsing="false" onAction="#handleButtonRemover" text="Remover" />
+      <Button fx:id="btnCancelar" layoutX="545.0" layoutY="332.0" mnemonicParsing="false" onAction="#handleButtonCancelarAP" text="Cancelar" />
+      <Button fx:id="btnLocalizar" layoutX="362.0" layoutY="332.0" mnemonicParsing="false" onAction="#handleButtonAlterar" text="Alterar" />
+      <Button fx:id="btnInserir" layoutX="305.0" layoutY="332.0" mnemonicParsing="false" onAction="#handleButtonInserir" text="Inserir" />
+      <Button fx:id="btConfirmar" layoutX="376.0" layoutY="314.0" mnemonicParsing="false" onAction="#handleButtonConfirmar" text="Confirmar" />
+      <Button fx:id="btCancelar" layoutX="465.0" layoutY="314.0" mnemonicParsing="false" onAction="#handleButtonCancelar" text="Cancelar" />
+      <Label fx:id="lbTele" layoutX="330.0" layoutY="283.0" text="Telefone 2:" />
+      <Label fx:id="lbTela" layoutX="328.0" layoutY="258.0" text="Telefone 1:" />
+      <Label fx:id="lbBairro" layoutX="328.0" layoutY="206.0" text="Bairro:" />
+      <Label fx:id="lbStatus" layoutX="451.0" layoutY="181.0" text="Status:" />
+      <Label fx:id="lbNum" layoutX="330.0" layoutY="181.0" text="N:" />
+      <Label fx:id="lbRua" layoutX="330.0" layoutY="156.0" text="Rua:" />
+      <Label fx:id="lbEmail" layoutX="331.0" layoutY="132.0" text="Email:" />
+      <Label fx:id="lbTipo" layoutX="331.0" layoutY="102.0" text="Tipo:" />
+      <Label fx:id="lbCPF" layoutX="331.0" layoutY="72.0" text="CPF/CNPJ:" />
+      <Label fx:id="lbNomeFunc" layoutX="331.0" layoutY="42.0" text="Nome Funcionário:" />
+      <Label fx:id="lbFuncao" layoutX="425.0" layoutY="22.0" />
+      <TableView fx:id="tvFunc" layoutX="20.0" layoutY="22.0" prefHeight="335.0" prefWidth="279.0">
+         <columns>
+            <TableColumn fx:id="tcIdFunc" prefWidth="28.0" text="ID" />
+            <TableColumn fx:id="tcNomeFunc" prefWidth="146.0" text="Nome Funcionário" />
+            <TableColumn fx:id="tcCPF" prefWidth="104.0" text="CPF/CNPJ" />
+         </columns>
+      </TableView>
+      <Label fx:id="lbUsuario" layoutX="328.0" layoutY="233.0" text="Usuario:" />
+      <Label fx:id="lbSenha" layoutX="461.0" layoutY="233.0" text="Senha:" />
+      <Label fx:id="lbUsuario1" layoutX="379.0" layoutY="233.0" />
+      <Label fx:id="lbSenha1" layoutX="505.0" layoutY="233.0" />
+      <TextField fx:id="tfUsuario" layoutX="376.0" layoutY="230.0" prefHeight="25.0" prefWidth="69.0" />
+      <TextField fx:id="tfSenha" layoutX="504.0" layoutY="230.0" prefHeight="25.0" prefWidth="69.0" />
+   </children>
+</AnchorPane>

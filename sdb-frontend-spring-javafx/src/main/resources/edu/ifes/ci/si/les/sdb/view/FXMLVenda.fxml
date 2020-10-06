@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" fx:id="apPrincipal" prefHeight="348.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="edu.ifes.ci.si.les.sdb.controller.FXMLCadastroVendasController">
+   <children>
+      <Label fx:id="lbFuncao" layoutX="286.0" layoutY="14.0" />
+      <Button fx:id="btConfirmar" layoutX="372.0" layoutY="286.0" mnemonicParsing="false" onAction="#handleButtonConfirmar" text="Confirmar" />
+      <Button fx:id="btCancelar" layoutX="461.0" layoutY="286.0" mnemonicParsing="false" onAction="#handleButtonCancelar" text="Cancelar" />
+      <Label fx:id="lbFuncionario1" layoutX="386.0" layoutY="258.0" />
+      <Label fx:id="lbFuncionario" layoutX="311.0" layoutY="258.0" text="Funcionário:" />
+      <Label fx:id="lbProduto1" layoutX="379.0" layoutY="146.0" />
+      <Label fx:id="lbVenc1" layoutX="373.0" layoutY="106.0" />
+      <Label fx:id="lbEntrega" layoutX="298.0" layoutY="89.0" text="Entrega:" />
+      <Label fx:id="lbNomeProd1" layoutX="401.0" layoutY="29.0" />
+      <Label fx:id="lbData1" layoutX="341.0" layoutY="59.0" />
+      <Label fx:id="lbData" layoutX="304.0" layoutY="59.0" text="Data: " />
+      <Label fx:id="lbNomeCliente" layoutX="314.0" layoutY="29.0" text="Nome Cliente:" />
+      <Label fx:id="lbFuncao1" layoutX="406.0" layoutY="7.0" />
+      <Button fx:id="btnListar" layoutX="338.0" layoutY="313.0" mnemonicParsing="false" onAction="#handleButtonListar" text="Listar " />
+      <Button fx:id="btnDetalhar" layoutX="391.0" layoutY="313.0" mnemonicParsing="false" onAction="#handleButtonDetalhar" text="Detalhar" />
+      <Button fx:id="btnRemover" layoutX="456.0" layoutY="313.0" mnemonicParsing="false" onAction="#handleButtonRemoverVenda" text="Remover" />
+      <Button fx:id="btnCancelar" layoutX="525.0" layoutY="313.0" mnemonicParsing="false" onAction="#handleButtonCancelarAP" text="Cancelar" />
+      <Button fx:id="btnInserir" layoutX="285.0" layoutY="313.0" mnemonicParsing="false" onAction="#handleButtonInserir" text="Inserir" />
+      <ComboBox fx:id="cbFornc" layoutX="409.0" layoutY="25.0" prefWidth="150.0" />
+      <DatePicker fx:id="dpDataCompra" layoutX="335.0" layoutY="55.0" prefHeight="25.0" prefWidth="137.0" />
+      <ComboBox fx:id="cbProdVenda" layoutX="372.0" layoutY="142.0" prefWidth="150.0" />
+      <Label fx:id="lbProd" layoutX="306.0" layoutY="146.0" text="Produto:" />
+      <Label fx:id="lbPreco" layoutX="306.0" layoutY="174.0" text="Preço:" />
+      <Label fx:id="lbPreco1" layoutX="346.0" layoutY="176.0" prefHeight="17.0" prefWidth="33.0" />
+      <TextField fx:id="tfPrecoCompra" layoutX="348.0" layoutY="171.0" prefHeight="25.0" prefWidth="82.0" />
+      <Label fx:id="lbQtde" layoutX="447.0" layoutY="174.0" text="Qtde:" />
+      <TextField fx:id="tfQtdeCompra" layoutX="483.0" layoutY="171.0" prefHeight="25.0" prefWidth="76.0" />
+      <Label fx:id="lbTotal" layoutX="309.0" layoutY="233.0" text="Total da Compra:" />
+      <Label fx:id="lbTotal1" layoutX="414.0" layoutY="235.0" />
+      <Button fx:id="btAdicionar" layoutX="384.0" layoutY="201.0" mnemonicParsing="false" onAction="#handleButtonAdicionar" text="+">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Button>
+      <Button fx:id="btRemover" layoutX="512.0" layoutY="201.0" mnemonicParsing="false" onAction="#handleButtonRemover" text="-">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Button>
+      <Label fx:id="lbInserir" layoutX="336.0" layoutY="208.0" text="Inserir:" />
+      <Label fx:id="lbRemover" layoutX="456.0" layoutY="209.0" text="Remover:" />
+      <AnchorPane fx:id="apTV" layoutX="7.0" layoutY="15.0" prefHeight="329.0" prefWidth="277.0">
+         <children>
+            <TableView fx:id="tvListCompras" layoutX="7.0" prefHeight="303.0" prefWidth="250.0">
+               <columns>
+                  <TableColumn fx:id="tcForn" prefWidth="90.0" text="Fornecedor" />
+                  <TableColumn fx:id="tcData" prefWidth="77.0" text="Data" />
+                  <TableColumn fx:id="tcTotal" prefWidth="82.0" text="Total" />
+               </columns>
+            </TableView>
+            <TableView fx:id="tvListProd" prefHeight="312.0" prefWidth="261.0">
+               <columns>
+                  <TableColumn fx:id="tcProd" prefWidth="75.0" text="Produto" />
+                  <TableColumn fx:id="tcPreco" prefWidth="75.0" text="Preço" />
+                  <TableColumn fx:id="tcQtde" prefWidth="36.0" text="Qtde" />
+                  <TableColumn fx:id="tcSubTotal" prefWidth="74.0" text="SubTotal" />
+               </columns>
+            </TableView>
+         </children>
+      </AnchorPane>
+      <Label fx:id="lbStatus" layoutX="472.0" layoutY="250.0" text="Status:" />
+      <Label fx:id="lbStatus1" layoutX="510.0" layoutY="250.0" />
+      <Label fx:id="lbQtde1" layoutX="484.0" layoutY="167.0" />
+      <Label fx:id="lbEntrega1" layoutX="350.0" layoutY="89.0" />
+      <Label fx:id="lbRua" layoutX="306.0" layoutY="115.0" text="Rua:" />
+      <Label fx:id="lbNum" layoutX="494.0" layoutY="115.0" text="N*:" />
+      <TextField fx:id="tfRua" layoutX="334.0" layoutY="111.0" prefHeight="25.0" prefWidth="150.0" />
+      <TextField fx:id="tfNum" layoutX="516.0" layoutY="111.0" prefHeight="25.0" prefWidth="44.0" />
+      <Label fx:id="lbRua1" layoutX="338.0" layoutY="115.0" />
+      <Label fx:id="lbNum1" layoutX="516.0" layoutY="115.0" />
+      <Group layoutX="347.0" layoutY="86.0">
+         <children>
+            <RadioButton fx:id="rbLocal" mnemonicParsing="false" text="Local" />
+            <RadioButton fx:id="rbCliente" layoutX="118.0" layoutY="1.0" mnemonicParsing="false" prefHeight="17.0" prefWidth="92.0" text="Casa Cliente" />
+         </children>
+      </Group>
+   </children>
+</AnchorPane>

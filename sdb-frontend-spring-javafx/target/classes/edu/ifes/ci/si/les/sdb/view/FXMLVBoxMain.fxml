@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="edu.ifes.ci.si.les.sdb.controller.FXMLVBoxMainController">
+    <children>
+        <AnchorPane blendMode="DARKEN" prefHeight="52.0" prefWidth="600.0">
+            <children>
+                <Label layoutX="33.0" layoutY="7.0" text="SDB - Sistema de Distribuidora de Bebidas" textFill="#2111f8">
+                    <font>
+                        <Font name="System Bold" size="14.0" />
+                    </font>
+                </Label>
+            <Label fx:id="lbCodUsu" layoutX="360.0" layoutY="6.0" text="Cod: " />
+            <Label fx:id="lbCodUsu1" layoutX="398.0" layoutY="6.0" />
+            </children>
+        </AnchorPane>
+        <MenuBar>
+            <menus>
+                <Menu mnemonicParsing="false" text="Cadastros">
+                    <items>
+                        <MenuItem fx:id="MIUf" mnemonicParsing="false" onAction="#handleMenuItemCadastrosUfs" text="UF" />
+                        <MenuItem fx:id="MICidade" mnemonicParsing="false" onAction="#handleMenuItemCadastroCidade" text="Cidade" />
+                        <MenuItem fx:id="MIBairro" mnemonicParsing="false" onAction="#handleMenuItemCadastroBairro" text="Bairro" />
+                        <MenuItem fx:id="MICliente" mnemonicParsing="false" onAction="#handleMenuItemCadastroCliente" text="Cliente" />
+                        <MenuItem fx:id="MIFornecedor" mnemonicParsing="false" onAction="#handleMenuItemCadastroFornecedor" text="Fornecedor" />
+                        <MenuItem fx:id="MIFuncionario" mnemonicParsing="false" onAction="#handleMenuItemCadastroFuncionario" text="Funcionario" />
+                        <MenuItem fx:id="MIProduto" mnemonicParsing="false" onAction="#handleMenuItemCadastroProduto" text="Produto" />
+                    </items>
+                </Menu>
+                <Menu mnemonicParsing="false" text="Processos">
+                    <items>
+                        <MenuItem fx:id="MICompraI" mnemonicParsing="false" onAction="#handleMenuItemCompras" text="Compras" />
+                        <MenuItem fx:id="MIVendaI" mnemonicParsing="false" onAction="#handleMenuItemVendas" text="Vendas" />
+
+                    </items>
+                </Menu>
+                <Menu mnemonicParsing="false" text="Gráficos">
+                    <items>
+                        <MenuItem mnemonicParsing="false" text="About" />
+                    </items>
+                </Menu>
+                <Menu mnemonicParsing="false" text="Sair">
+                    <items>
+                        <MenuItem fx:id="MISair" mnemonicParsing="false" onAction="#handleMenuItemSair" text="Sair do Sistema" />
+                    </items>
+                </Menu>
+            </menus>
+        </MenuBar>
+        <AnchorPane fx:id="APPrincipal" prefHeight="366.0" prefWidth="600.0">
+        </AnchorPane>
+    </children>
+</VBox>

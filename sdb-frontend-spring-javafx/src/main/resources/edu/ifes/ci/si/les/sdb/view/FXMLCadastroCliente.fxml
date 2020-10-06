@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+
+<AnchorPane id="AnchorPane" fx:id="apCliente" prefHeight="358.0" prefWidth="600.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8" fx:controller="edu.ifes.ci.si.les.sdb.controller.FXMLCadastroClienteController">
+   <children>
+      <TableView fx:id="tvCliente" layoutX="10.0" layoutY="12.0" prefHeight="335.0" prefWidth="279.0">
+         <columns>
+            <TableColumn fx:id="tcIdCliente" prefWidth="28.0" text="ID" />
+            <TableColumn fx:id="tcNomeCliente" prefWidth="146.0" text="Nome Cliente" />
+            <TableColumn fx:id="tcCPF" prefWidth="104.0" text="CPF/CNPJ" />
+         </columns>
+      </TableView>
+      <Label fx:id="lbFuncao" layoutX="415.0" layoutY="12.0" />
+      <Label fx:id="lbNomeCliente" layoutX="321.0" layoutY="32.0" text="Nome Cliente:" />
+      <Label fx:id="lbCPF" layoutX="321.0" layoutY="62.0" text="CPF/CNPJ:" />
+      <Label fx:id="lbTipo" layoutX="321.0" layoutY="92.0" text="Tipo:" />
+      <Label fx:id="lbEmail" layoutX="321.0" layoutY="122.0" text="Email:" />
+      <Label fx:id="lbRua" layoutX="320.0" layoutY="146.0" text="Rua:" />
+      <Label fx:id="lbNum" layoutX="320.0" layoutY="171.0" text="N:" />
+      <Label fx:id="lbStatus" layoutX="441.0" layoutY="171.0" text="Status:" />
+      <Label fx:id="lbBairro" layoutX="318.0" layoutY="196.0" text="Bairro:" />
+      <Label fx:id="lbFunc" layoutX="318.0" layoutY="223.0" text="Funcionário:" />
+      <Label fx:id="lbTela" layoutX="318.0" layoutY="248.0" text="Telefone 1:" />
+      <Label fx:id="lbTele" layoutX="320.0" layoutY="273.0" text="Telefone 2:" />
+      <Button fx:id="btCancelar" layoutX="455.0" layoutY="304.0" mnemonicParsing="false" onAction="#handleButtonCancelar" text="Cancelar" />
+      <Button fx:id="btConfirmar" layoutX="366.0" layoutY="304.0" mnemonicParsing="false" onAction="#handleButtonConfirmar" text="Confirmar" />
+      <Button fx:id="btnInserir" layoutX="295.0" layoutY="322.0" mnemonicParsing="false" onAction="#handleButtonInserir" text="Inserir" />
+      <Button fx:id="btnLocalizar" layoutX="352.0" layoutY="322.0" mnemonicParsing="false" onAction="#handleButtonAlterar" text="Alterar" />
+      <Button fx:id="btnCancelar" layoutX="535.0" layoutY="322.0" mnemonicParsing="false" onAction="#handleButtonCancelarAP" text="Cancelar" />
+      <Button fx:id="btnRemover" layoutX="464.0" layoutY="322.0" mnemonicParsing="false" onAction="#handleButtonRemover" text="Remover" />
+      <Button fx:id="btnListar" layoutX="412.0" layoutY="322.0" mnemonicParsing="false" onAction="#handleButtonListar" text="Listar" />
+      <Label fx:id="lbNomeCliente1" layoutX="401.0" layoutY="32.0" />
+      <Label fx:id="lbCPF1" layoutX="383.0" layoutY="62.0" />
+      <Label fx:id="lbTipo1" layoutX="352.0" layoutY="92.0" />
+      <Label fx:id="lbEmail1" layoutX="362.0" layoutY="122.0" />
+      <Label fx:id="lbRua1" layoutX="348.0" layoutY="146.0" />
+      <Label fx:id="lbNum1" layoutX="337.0" layoutY="171.0" />
+      <Label fx:id="lbStatus1" layoutX="482.0" layoutY="171.0" />
+      <Label fx:id="lbBairro1" layoutX="364.0" layoutY="196.0" />
+      <Label fx:id="lbFunc1" layoutX="390.0" layoutY="223.0" />
+      <Label fx:id="lbTela1" layoutX="383.0" layoutY="248.0" />
+      <Label fx:id="lbTele1" layoutX="383.0" layoutY="273.0" />
+      <TextField fx:id="tfNome" layoutX="403.0" layoutY="28.0" />
+      <TextField fx:id="tfCPF" layoutX="390.0" layoutY="55.0" />
+      <TextField fx:id="tfTipo" layoutX="360.0" layoutY="82.0" />
+      <TextField fx:id="tfEmail" layoutX="360.0" layoutY="110.0" />
+      <TextField fx:id="tfRua" layoutX="349.0" layoutY="138.0" />
+      <TextField fx:id="tfNum" layoutX="342.0" layoutY="165.0" prefHeight="25.0" prefWidth="69.0" />
+      <ComboBox fx:id="cbBairro" layoutX="359.0" layoutY="193.0" prefWidth="150.0" />
+      <Label fx:id="lbFuncId" layoutX="389.0" layoutY="220.0" prefWidth="150.0" />
+      <TextField fx:id="tfTel1" layoutX="381.0" layoutY="247.0" />
+      <TextField fx:id="tfTel2" layoutX="382.0" layoutY="274.0" />
+   </children>
+</AnchorPane>

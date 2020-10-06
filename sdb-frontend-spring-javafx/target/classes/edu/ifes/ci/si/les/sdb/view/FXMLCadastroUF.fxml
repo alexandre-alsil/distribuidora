@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane fx:id="apUF" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="351.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="edu.ifes.ci.si.les.sdb.controller.FXMLCadastroUFController">
+   <children>
+      <Button fx:id="btnListar" layoutX="406.0" layoutY="311.0" mnemonicParsing="false" onAction="#handleButtonListar" text="Listar" />
+      <Button fx:id="btnRemover" layoutX="458.0" layoutY="311.0" mnemonicParsing="false" onAction="#handleButtonRemover" text="Remover" />
+      <Button fx:id="btnCancelar" layoutX="529.0" layoutY="311.0" mnemonicParsing="false" onAction="#handleButtonCancelarAP" text="Cancelar" />
+      <Button fx:id="btnLocalizar" layoutX="346.0" layoutY="311.0" mnemonicParsing="false" onAction="#handleButtonAlterar" text="Alterar" />
+      <TextField fx:id="tfUf" layoutX="400.0" layoutY="148.0" />
+      <TextField fx:id="tfNomeUf" layoutX="400.0" layoutY="108.0" />
+      <Label fx:id="lbUf" layoutX="318.0" layoutY="152.0" text="Sigla UF:" />
+      <Label fx:id="lbNomeUf" layoutX="314.0" layoutY="112.0" text="Nome UF:" />
+      <Label fx:id="lbFuncao" layoutX="426.0" layoutY="50.0" text="Label" />
+      <TableView fx:id="tvUf" layoutX="5.0" layoutY="2.0" prefHeight="334.0" prefWidth="279.0">
+        <columns>
+            <TableColumn fx:id="tcId" prefWidth="42.0" text="ID" />
+          <TableColumn fx:id="tcUf" prefWidth="76.0" text="UF" />
+          <TableColumn fx:id="tcNomeUf" prefWidth="160.0" text="Nome UF" />
+        </columns>
+      </TableView>
+      <Button fx:id="btnInserir" layoutX="289.0" layoutY="311.0" mnemonicParsing="false" onAction="#handleButtonInserir" text="Inserir" />
+      <Label fx:id="lbNomeUF1" layoutX="371.0" layoutY="112.0" />
+      <Label fx:id="lbUF1" layoutX="367.0" layoutY="152.0" />
+      <Button fx:id="btConfirmar" layoutX="414.0" layoutY="222.0" mnemonicParsing="false" onAction="#handleButtonConfirmar" text="Confirmar" />
+      <Button fx:id="btCancelar" layoutX="503.0" layoutY="222.0" mnemonicParsing="false" onAction="#handleButtonCancelar" text="Cancelar" />
+   </children>
+</AnchorPane>

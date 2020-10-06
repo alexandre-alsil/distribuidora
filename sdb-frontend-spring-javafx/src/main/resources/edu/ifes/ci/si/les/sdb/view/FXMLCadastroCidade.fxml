@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+
+<AnchorPane id="AnchorPane" fx:id="apCidade" prefHeight="352.0" prefWidth="601.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8" fx:controller="edu.ifes.ci.si.les.sdb.controller.FXMLCadastroCidadeController">
+   <children>
+      <TableView fx:id="tvCidade" layoutX="4.0" layoutY="10.0" prefHeight="333.0" prefWidth="281.0">
+        <columns>
+          <TableColumn fx:id="tcIdCidade" prefWidth="45.0" text="ID" />
+          <TableColumn fx:id="tcNomeCidade" prefWidth="144.0" text="Nome Cidade" />
+            <TableColumn fx:id="tcUFCidade" prefWidth="91.0" text="UF" />
+        </columns>
+      </TableView>
+      <Label fx:id="lbFuncao" layoutX="435.0" layoutY="14.0" />
+      <Label fx:id="lbNomeCidade" layoutX="327.0" layoutY="62.0" text="Nome Cidade:" />
+      <Label fx:id="lbUFCidade" layoutX="327.0" layoutY="98.0" text="UF Cidade:" />
+      <Label fx:id="lbNomeCidade1" layoutX="421.0" layoutY="62.0" />
+      <Label fx:id="lbUFCidade1" layoutX="403.0" layoutY="98.0" />
+      <Button fx:id="btnInserir" layoutX="292.0" layoutY="317.0" mnemonicParsing="false" onAction="#handleButtonInserir" text="Inserir" />
+      <Button fx:id="btnLocalizar" layoutX="349.0" layoutY="317.0" mnemonicParsing="false" onAction="#handleButtonAlterar" text="Alterar" />
+      <Button fx:id="btnCancelar" layoutX="532.0" layoutY="317.0" mnemonicParsing="false" onAction="#handleButtonCancelarAP" text="Cancelar" />
+      <Button fx:id="btnRemover" layoutX="461.0" layoutY="317.0" mnemonicParsing="false" onAction="#handleButtonRemover" text="Remover" />
+      <Button fx:id="btnListar" layoutX="409.0" layoutY="317.0" mnemonicParsing="false" onAction="#handleButtonListar" text="Listar" />
+      <TextField fx:id="tfNomeCidade" layoutX="417.0" layoutY="58.0" />
+      <ComboBox fx:id="cbUF" layoutX="403.0" layoutY="94.0" prefWidth="150.0" promptText="Selecione a UF" />
+      <Button fx:id="btCancelar" layoutX="515.0" layoutY="164.0" mnemonicParsing="false" onAction="#handleButtonCancelar" text="Cancelar" />
+      <Button fx:id="btConfirmar" layoutX="426.0" layoutY="164.0" mnemonicParsing="false" onAction="#handleButtonConfirmar" text="Confirmar" />
+   </children>
+</AnchorPane>

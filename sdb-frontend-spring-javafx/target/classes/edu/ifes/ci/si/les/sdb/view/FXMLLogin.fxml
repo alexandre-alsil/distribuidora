@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+
+<AnchorPane id="AnchorPane" fx:id="apLogin" prefHeight="255.0" prefWidth="369.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8" fx:controller="edu.ifes.ci.si.les.sdb.controller.FXMLLoginController">
+   <children>
+      <Button fx:id="btnLogar" layoutX="101.0" layoutY="177.0" mnemonicParsing="false" onAction="#handleButtonConfirmar" text="Confirmar" />
+      <Button fx:id="btnCancelar" layoutX="186.0" layoutY="177.0" mnemonicParsing="false" onAction="#handleButtonCancelar" text="Cancelar" />
+      <Label fx:id="lbUsuario" layoutX="79.0" layoutY="63.0" text="Usuário:" />
+      <Label fx:id="lbSenha" layoutX="84.0" layoutY="114.0" text="Senha:" />
+      <TextField fx:id="tfUsuario" layoutX="127.0" layoutY="60.0" />
+      <TextField fx:id="tfSenha" layoutX="127.0" layoutY="109.0" />
+   </children>
+</AnchorPane>

@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+
+<AnchorPane id="AnchorPane" fx:id="apProduto" prefHeight="355.0" prefWidth="600.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8" fx:controller="edu.ifes.ci.si.les.sdb.controller.FXMLCadastroProdutoController">
+   <children>
+      <TableView fx:id="tvProd" layoutX="10.0" layoutY="11.0" prefHeight="335.0" prefWidth="279.0">
+         <columns>
+            <TableColumn fx:id="tcIdProd" prefWidth="28.0" text="ID" />
+            <TableColumn fx:id="tcNomeProd" prefWidth="146.0" text="Nome Produto" />
+            <TableColumn fx:id="tcEst" prefWidth="104.0" text="Estoque" />
+         </columns>
+      </TableView>
+      <Button fx:id="btnInserir" layoutX="292.0" layoutY="320.0" mnemonicParsing="false" onAction="#handleButtonInserir" text="Inserir" />
+      <Button fx:id="btnLocalizar" layoutX="349.0" layoutY="320.0" mnemonicParsing="false" onAction="#handleButtonAlterar" text="Alterar" />
+      <Button fx:id="btnCancelar" layoutX="532.0" layoutY="320.0" mnemonicParsing="false" onAction="#handleButtonCancelarAP" text="Cancelar" />
+      <Button fx:id="btnRemover" layoutX="461.0" layoutY="320.0" mnemonicParsing="false" onAction="#handleButtonRemover" text="Remover" />
+      <Button fx:id="btnListar" layoutX="409.0" layoutY="320.0" mnemonicParsing="false" onAction="#handleButtonListar" text="Listar" />
+      <Label fx:id="lbFuncao" layoutX="429.0" layoutY="22.0" />
+      <TextField fx:id="tfNome" layoutX="423.0" layoutY="48.0" />
+      <Label fx:id="lbNomeProd" layoutX="331.0" layoutY="52.0" text="Nome Produto:" />
+      <Label fx:id="lbTipo" layoutX="335.0" layoutY="80.0" text="Tipo: " />
+      <Label fx:id="lbTipo1" layoutX="372.0" layoutY="80.0" />
+      <Label fx:id="lbNomeProd1" layoutX="417.0" layoutY="52.0" />
+      <TextField fx:id="tfTipo" layoutX="365.0" layoutY="76.0" prefHeight="25.0" prefWidth="49.0" />
+      <Label fx:id="lbStatus" layoutX="447.0" layoutY="80.0" text="Status:" />
+      <TextField fx:id="tfStatus" layoutX="489.0" layoutY="76.0" prefHeight="25.0" prefWidth="52.0" />
+      <Label fx:id="lbStatus1" layoutX="493.0" layoutY="80.0" />
+      <Label fx:id="lbPreco" layoutX="335.0" layoutY="111.0" text="Preço:" />
+      <Label fx:id="lbPreco1" layoutX="376.0" layoutY="111.0" />
+      <Label fx:id="lbPrecoCompra" layoutX="454.0" layoutY="111.0" text="Preco Compra:" />
+      <Label fx:id="lbPrecoCompra1" layoutX="541.0" layoutY="111.0" />
+      <TextField fx:id="tfPreco" layoutX="374.0" layoutY="107.0" prefHeight="25.0" prefWidth="71.0" />
+      <Label fx:id="lbPrecoPromocao" layoutX="335.0" layoutY="141.0" text="Preço Promoção:" />
+      <Label fx:id="lbPrecoPromocao1" layoutX="431.0" layoutY="141.0" />
+      <TextField fx:id="tfPrecoPromocao" layoutX="433.0" layoutY="137.0" prefHeight="25.0" prefWidth="64.0" />
+      <Label fx:id="lbCurvaABC" layoutX="335.0" layoutY="169.0" text="Curva ABC:" />
+      <Label fx:id="lbCurvaABC1" layoutX="400.0" layoutY="169.0" />
+      <Label fx:id="lbCurvaXYZ" layoutX="447.0" layoutY="169.0" text="Curva XYZ:" />
+      <Label fx:id="lbCurvaXYZ1" layoutX="511.0" layoutY="169.0" />
+      <Label fx:id="lbEstoque" layoutX="335.0" layoutY="199.0" text="Estoque:" />
+      <Label fx:id="lbEstoque1" layoutX="386.0" layoutY="199.0" />
+      <Label fx:id="lbEstoqueMin" layoutX="451.0" layoutY="199.0" text="Estoque Min:" />
+      <Label fx:id="lbEstoqueMin1" layoutX="527.0" layoutY="199.0" />
+      <Label fx:id="lbFuncionario" layoutX="336.0" layoutY="228.0" text="Funcionário:" />
+      <Label fx:id="lbFuncId" layoutX="408.0" layoutY="224.0" prefWidth="150.0" />
+      <Label fx:id="lbFuncionario1" layoutX="409.0" layoutY="228.0" />
+      <Button fx:id="btCancelar" layoutX="468.0" layoutY="293.0" mnemonicParsing="false" onAction="#handleButtonCancelar" text="Cancelar" />
+      <Button fx:id="btConfirmar" layoutX="379.0" layoutY="293.0" mnemonicParsing="false" onAction="#handleButtonConfirmar" text="Confirmar" />
+      <Label fx:id="lbFornecedor" layoutX="338.0" layoutY="257.0" text="Fornecedor:" />
+      <Label fx:id="lbFornecedor1" layoutX="411.0" layoutY="257.0" />
+   </children>
+</AnchorPane>
